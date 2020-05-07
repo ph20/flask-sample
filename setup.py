@@ -58,7 +58,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.4.a1',  # Required
+    version='0.4.a2',  # Required
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
@@ -178,7 +178,9 @@ setup(
     #data_files=[('my_data', ['data/data_file'])],  # Optional
 
     install_requires=['Flask==1.1.2',
-                      'Jinja2==2.11.2'],
+                      'Jinja2==2.11.2',
+                      'Click==7.1.2',
+                      ],
 
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
