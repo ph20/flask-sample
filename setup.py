@@ -178,7 +178,7 @@ setup(
     #data_files=[('my_data', ['data/data_file'])],  # Optional
 
     install_requires=['Flask==1.1.2',
-                      'Jinja2==2.11.2',
+                      'Jinja2==2.11.3',
                       'Click==7.1.2',
                       ],
 
