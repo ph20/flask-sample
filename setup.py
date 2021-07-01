@@ -58,7 +58,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.4.a2',  # Required
+    version='0.4.a3',  # Required
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
@@ -127,6 +127,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 
     # This field adds keywords for your project which will appear on the
@@ -177,11 +178,18 @@ setup(
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
     #data_files=[('my_data', ['data/data_file'])],  # Optional
 
-    install_requires=['Flask==1.1.2',
-                      'Jinja2==2.11.2',
-                      'Click==7.1.2',
+    install_requires=['Flask==2.0.1',
+                      'Jinja2==3.0.1',
+                      'Click==8.0.1',
                       ],
-
+    extras_require={
+        'dev': [
+            'wheel',
+        ],
+        'gunicorn': [
+            'gunicorn',
+        ]
+    },
     # To provide executable scripts, use entry points in preference to the
     # "scripts" keyword. Entry points provide cross-platform support and allow
     # `pip` to create the appropriate form of executable for the target
