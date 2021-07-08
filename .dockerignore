@@ -1,0 +1,9 @@
+.git
+.idea
+build
+dist
+.gitignore
+.gitattributes
+.editorconfig
+.dockerignore
+venv
