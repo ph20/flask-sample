@@ -4,7 +4,7 @@
 # Usage:
 #    docker run -p 127.0.0.1:8088:8088/tcp --rm -it local/flask-sample:latest
 
-FROM registry.access.redhat.com/ubi8/python-39
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.4
 EXPOSE 8080
 USER 0
 ARG PIPINSTALL_OPTS=flask-sample
