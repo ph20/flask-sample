@@ -178,7 +178,7 @@ setup(
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
     #data_files=[('my_data', ['data/data_file'])],  # Optional
 
-    install_requires=['Flask==2.0.1',
+    install_requires=['Flask==2.3.2',
                       'Jinja2==3.0.1',
                       'Click==8.0.1',
                       ],
